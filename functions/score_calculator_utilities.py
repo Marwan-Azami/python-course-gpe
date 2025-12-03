@@ -21,3 +21,5 @@ def avg_of_tableau(tableau):
     avg = sum_of_tableau(tableau) / len(tableau)
     return avg
 
+
+# Ajouter une fonction qui permet de faire scoring
