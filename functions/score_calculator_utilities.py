@@ -23,3 +23,12 @@ def avg_of_tableau(tableau):
 
 
 # Ajouter une fonction qui permet de faire scoring
+def score(avg_grades):
+    if avg_grades >= 0 and avg_grades < 10:
+        return "Bad"
+    elif avg_grades >= 10 and avg_grades <= 20:
+        if avg_grades == 20:
+            return "Very Very Good ...^_^"
+        return "Good"
+    else:
+        return "Error"
