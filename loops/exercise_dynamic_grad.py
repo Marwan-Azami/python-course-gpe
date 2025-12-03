@@ -6,14 +6,14 @@
 grades = [] # Empty
 to_continue = True # Continue
 
-while to_continue == True: # To test if the condition == true
+while True: # To test if the condition == true
     # collect the given grade
     grade = float(input("Please provide a grade: "))
     # ask the user to continue or stop
-    response = input("Do you want to continue y = Yes, n = No")
+    response = input("Do you want to continue y = Yes, n = N")
     # If the user wants to leave
     if response == "n":
-        to_continue = False
+        break
     # add to the list
     grades.append(grade)
     print("Grades = ", grades)
