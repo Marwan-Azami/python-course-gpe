@@ -15,13 +15,15 @@ tab_notes = [] # Where we will save mark
 def select_choice():
     message = """
     # *** Please choose an action ***
+    # 0 - Quite
     # 1 - to add a new mark
     # 2 - update a mark, [ 12, 12, 13...]
     # 3 - remove a mark
     # 4 - calculate the scoring
     # 5 - Empty the table
     # 6 - Show all the marks with index
-    # 0 - Quite
+    # 7 - Save in score.txt
+    # 8 - Read from score.txt
     # *******************************
     """
     choice = input(message)
@@ -34,6 +36,19 @@ def show_marks_with_index():
     print("*******************************")
 #---------------------------------------------------
 
+# To save tab notes in a filed called score.txt
+def save_tab_notes():
+    _file = open("score.txt", "a+")
+    for note in tab_notes:
+        _file.write(str(note)+"\n")
+    _file.close()
+
+# to read from a file and put these information in the tab_note
+def read_tab_notes_from_file():
+    _file = open("score.txt", "r")
+    for note in _file.readlines():
+        tab_notes.append(float(note.strip())) # remove  \n from characters
+    _file.close()
 
 while True:
     # Ask the user for an action
@@ -60,6 +75,10 @@ while True:
         show_marks_with_index()
     elif choice == 0: # Quite
         break
+    elif choice == 7: # Save notes
+        save_tab_notes()
+    elif choice == 8:
+        read_tab_notes_from_file()
     else:
         print("Error ")
         continue
