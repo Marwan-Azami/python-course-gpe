@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        #div-form{
+            width:400px;
+            height:400px;
+            border: 1px black dotted
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div-form">
+         <div style="text-align:center">
+                    <img src="fsth.jpeg">
+        </div>
+        <form id="form_login" style="background:#A7C8E255;">
+            <p>
+                You can subscribe by filling this form
+            </p>
+            <fieldset style="background:white">
+                <label for="login_id">Login</label>
+                <input type="text" name="xgf" id="login_id">
+            </fieldset>
+            <br>
+            <fieldset style="background:white">
+                <label for="password_id">Password</label>
+                <input type="password" id="password_id" >
+            </fieldset>
+            <br>
+            <!-- submit -->
+            <textarea cols="47" rows="10">
+            </textarea>
+            <br>
+            <br>
+            <div>
+                2025
+                <label for="b2025">Oui</label>
+                <input type="radio" id="b2025" name="b2025">
+                <label for="b2025_2">Non</label>
+                <input type="radio" id="b2025_2" name="b2025">
+
+            </div>
+
+            <br>
+
+
+            <fieldset>
+                Type de Bac 2025 :
+                <label for="t_bac">Science Math</label>
+                <input type="checkbox" id="t_bac" name="t_bac">
+                <label for="t_bac">SVT</label>
+                <input type="checkbox" id="t_bac2" name="t_bac">
+                <label for="t_bac_2">PC</label>
+                <input type="checkbox" id="t_bac_2" name="t_bac">
+            </fieldset>
+            <br>
+
+            <div>
+                Favorite color
+                <input type="color">
+
+            </div>
+                <br>
+
+                <div>
+                    Birthday:
+                    <input type="date" >
+                </div>
+                <br>
+
+
+            <div>
+                <label for="en_level">English Level </label>
+                <input type="range" id="en_level" min="0" max="100">
+            </div>
+            <br>
+            <div>
+
+                <input type="file" >
+            </div>
+            <br>
+             <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
