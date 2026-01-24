@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    /* class identifier */
+    .p-class{
+        color: blueviolet;
+    }
+    /* id identifier */
+    #p-1{
+        font-weight: bold;
+        font-size: 44px;
+    }
+    /** **/
+    p {
+        color: greenyellow;
+        font-family: "DejaVu Sans";
+        font-size: xx-large;
+        font-weight: normal;
+        vertical-align: top;
+    }
+    a {
+        color: #333333;
+        text-decoration: none;
+    }
+    a:hover{
+        background: red;
+    }
+    .custom-link{
+        color: green;
+        text-decoration: underline;
+    }
+    #ma-div{
+        border: 12px  dashed black;
+        box-shadow: 16px 16px 11px #AA444A;
+        height: 300px;
+        width: 300px;
+        background: red;
+        margin:25px; /* external */
+/*        padding-top:0px;
+        padding-left: 50px;
+        padding-right: 50px;*/
+        /*padding: 10px 50px;*/
+        padding: 50px;
+        overflow: scroll;
+    }
+    #ma-div:hover{
+        transform: scale3d(1.25, 1, 1);
+
+    }
+    #ma-div p{
+        text-align: center;
+        background: yellow;
+    }
+</style>
+<p id="p-1" class="p-class">  p1 </p>
+<p class="p-class">  p1 </p>
+<p class="p-class">  p1 </p>
+<p class="p-class">  p1 </p>
+<p> p2</p>
+<p> this a text</p>
+
+<a href="#">Click me</a>
+<a href="#" class="custom-link">Other link</a>
+
+
+<div id="ma-div">
+    <p> This is my text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam leo fringilla hendrerit efficitur. Maecenas bibendum iaculis purus eget placerat. Nunc aliquet tristique mauris, elementum suscipit ante congue sit amet.
+visible;
+</p>
+
+</div>
+<a href="#">link</a>
+
+
+</body>
+</html>
